@@ -1,19 +1,18 @@
 # BookStore
 A full-stack web application designed to manage a collection of books seamlessly. This application leverages the power of Spring Boot for the backend and React for the frontend to deliver a robust and interactive user experience.
 
-# Bookstore Project
 
 ## Table of Contents
-- [Overview]
-- [Features]
-- [Technologies]
-- [Setup Instructions]
-- [Backend Setup (Spring Boot)]
-- [Frontend Setup (React)]
-- [API Endpoints]
-- [Usage]
-- [Contributing]
-- [License]
+- [Overview](#overview)
+- [Features](#features)
+- [Technologies](#technologies)
+- [Setup Instructions](#setup-instructions)
+- [Backend Setup (Spring Boot)](#backend-setup-spring-boot)
+- [Frontend Setup (React)](#frontend-setup-react)
+- [API Endpoints](#api-endpoints)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
 ## Overview
 This is a full-stack Bookstore application that allows users to search for books, view details, and manage their own collection. The backend is built with Spring Boot, while the frontend is built with React, HTML, and CSS.
@@ -35,7 +34,6 @@ This is a full-stack Bookstore application that allows users to search for books
 - React
 - HTML
 - CSS
-- Javascript
 
 ## Setup Instructions
 
@@ -45,27 +43,24 @@ This is a full-stack Bookstore application that allows users to search for books
 - Maven
 
 ### Backend Setup (Spring Boot)
-
 1. **Clone the repository**:
-
+    ```bash
     git clone https://github.com/yourusername/bookstore-backend.git
     cd bookstore-backend
-
+    ```
 
 2. **Set up the Google Books API key**:
-
     - Obtain an API key from the Google Cloud Console.
     - Add the API key to `application.properties` file:
-
-      properties
+      ```properties
       google.books.api.key=YOUR_GOOGLE_BOOKS_API_KEY
-      
+      ```
 
 3. **Build and run the Spring Boot application**:
-   
+    ```bash
     mvn clean install
     mvn spring-boot:run
-
+    ```
 
 4. **Access H2 Database Console (for development)**:
     - URL: `http://localhost:8080/h2-console`
@@ -73,23 +68,22 @@ This is a full-stack Bookstore application that allows users to search for books
     - Username: `sa`
     - Password: `password`
 
-
 ### Frontend Setup (React)
 1. **Clone the repository**:
-  
+    ```bash
     git clone https://github.com/yourusername/bookstore-frontend.git
     cd bookstore-frontend
-  
+    ```
 
 2. **Install dependencies**:
-   
+    ```bash
     npm install
-   
+    ```
 
 3. **Start the React application**:
-  
+    ```bash
     npm start
-   
+    ```
 
 4. **Access the application**:
     - URL: `http://localhost:3000`
@@ -101,8 +95,6 @@ This is a full-stack Bookstore application that allows users to search for books
 - **POST /books**: Add a new book to the collection
 - **PUT /books/{id}**: Update details of a specific book by ID
 - **DELETE /books/{id}**: Delete a book from the collection by ID
-
-- ** Will add more
 
 ## Usage
 1. **Search for Books**:
@@ -121,5 +113,3 @@ This is a full-stack Bookstore application that allows users to search for books
 3. **Commit your changes** (`git commit -am 'Add some feature'`).
 4. **Push to the branch** (`git push origin feature/your-feature-name`).
 5. **Create a new Pull Request**.
-
-
