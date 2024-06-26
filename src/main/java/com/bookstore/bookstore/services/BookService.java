@@ -6,10 +6,22 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Optional;
+//Service
+/* save book
+*  get all
+*  delete by id
+*  update by id
+*  get by id
+*  sold
+*  Add to cart
+*  Add to wishList
+*  */
 
 @Service
 public class BookService {
+
+    private String apiKey = "AIzaSyA4Ehm6dt3GsBNa8WC8AhU_knHgypLHa04";
+    private String baseUrl = "https://www.googleapis.com/books/v1/volumes";
     
     @Autowired
     BookRepository bookRepository;
@@ -37,6 +49,15 @@ public class BookService {
         existingBook.setPages(book.getPages());
         return existingBook;
     }
+
+    public Book getById(Long id,Book book){
+        return bookRepository.findById(id).orElseThrow(()-> new RuntimeException("Book not found"));
+    }
+
+
+
+
+
 
 
 }
