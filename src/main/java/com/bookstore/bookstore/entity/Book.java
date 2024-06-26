@@ -23,9 +23,9 @@ public class Book {
     @Column(name = "ISBN")
     private String isbn;
     @Column(name = "PRICE")
-    private BigDecimal price;
+    private double price;
     @Column(name = "QUANTITY")
-    private  int quantity;
+    private  int stock;
     @Column(name = "PAGES")
     private int pages;
 

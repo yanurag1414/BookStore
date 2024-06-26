@@ -44,5 +44,12 @@ public class BookController {
         return new ResponseEntity<>("deleted Successfully",HttpStatus.OK);
     }
 
+    @GetMapping(path = "/search/{id}")
+    public ResponseEntity<Book> searchById(@PathVariable Long id,@RequestBody Book book){
+        return new ResponseEntity<>(bookService.getById(id,book),HttpStatus.ACCEPTED);
+    }
+
+
+
 
 }
